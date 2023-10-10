@@ -7,7 +7,7 @@ exports.makePurchase = async (productDescription, quantity, costInCents, success
             payment_method_types: [
                 'card'
             ],
-            mode: 'payment', // 'subscription' would be for recurring charges,
+            mode: 'subscription', // 'subscription' would be for recurring charges, 'paymnet' for single time purchase
             success_url: successURL,
             cancel_url: cancelURL,
             line_items: [
